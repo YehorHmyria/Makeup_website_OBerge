@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Purchase gift certificates">
+  <title data-i18n="giftCertificates.title">Gift Certificates | Makeup & Beauty</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container container">
+      <a href="index.html" class="logo">
+        <span data-i18n="hero.title">COSMETICS</span>
+        <span class="logo-subtitle" data-i18n="hero.subtitle">Makeup & Beauty</span>
+      </a>
+      
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="shop.html" class="nav-link" data-i18n="nav.cosmetics">cosmetics</a></li>
+          <li><a href="shop.html?category=fragrance" class="nav-link" data-i18n="nav.fragrance">fragrance</a></li>
+          <li><a href="shop.html?category=skin" class="nav-link" data-i18n="nav.skin">skin</a></li>
+          <li><a href="shop.html?category=baby" class="nav-link" data-i18n="nav.baby">baby</a></li>
+          <li><a href="courses.html" class="nav-link" data-i18n="nav.discover">discover</a></li>
+          <li><a href="booking.html" class="nav-link" data-i18n="nav.booking">booking</a></li>
+        </ul>
+        
+        <div class="language-switcher">
+          <button class="lang-btn" data-lang="no">NO</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+      
+      <div class="header-icons">
+        <button class="icon-btn search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+        <a href="cart.html" class="icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1"/>
+            <circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main style="margin-top: var(--header-height); padding: var(--spacing-xl) 0;">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title" data-i18n="giftCertificates.title">Gift Certificates</h1>
+        <p class="section-subtitle" data-i18n="giftCertificates.subtitle">Give the gift of beauty and luxury</p>
+      </div>
+      
+      <div class="gift-card-designer">
+        <!-- Gift Card Preview -->
+        <div class="gift-card-preview">
+          <div class="gift-card-logo" data-i18n="hero.title">COSMETICS</div>
+          <div class="gift-card-amount" id="preview-amount">500 NOK</div>
+          <div class="gift-card-message" id="preview-message">
+            <span data-i18n="giftCertificates.preview">A gift of beauty awaits you</span>
+          </div>
+        </div>
+        
+        <!-- Gift Card Form -->
+        <div>
+          <form data-validate>
+            <div class="form-group">
+              <label class="form-label" data-i18n="giftCertificates.selectAmount">Select Amount</label>
+              <div class="amount-options">
+                <div class="amount-option selected" data-amount="500">500 NOK</div>
+                <div class="amount-option" data-amount="1000">1000 NOK</div>
+                <div class="amount-option" data-amount="1500">1500 NOK</div>
+                <div class="amount-option" data-amount="2000">2000 NOK</div>
+                <div class="amount-option" data-amount="3000">3000 NOK</div>
+                <div class="amount-option" data-amount="custom">
+                  <span data-i18n="giftCertificates.customAmount">Custom</span>
+                </div>
+              </div>
+              <input type="number" name="amount" id="amount-input" class="form-input" value="500" min="100" style="margin-top: 1rem; display: none;">
+            </div>
+            
+            <h3 style="margin-top: var(--spacing-lg); margin-bottom: var(--spacing-md);" data-i18n="giftCertificates.recipient">
+              Recipient Information
+            </h3>
+            
+            <div class="form-group">
+              <label class="form-label" data-i18n="giftCertificates.recipientName">Recipient Name</label>
+              <input type="text" name="recipientName" class="form-input" required>
+              <span class="form-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" data-i18n="giftCertificates.recipientEmail">Recipient Email</label>
+              <input type="email" name="recipientEmail" class="form-input" required>
+              <span class="form-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" data-i18n="giftCertificates.yourName">Your Name</label>
+              <input type="text" name="senderName" class="form-input" required>
+              <span class="form-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" data-i18n="giftCertificates.message">Personal Message</label>
+              <textarea name="message" class="form-textarea" rows="4" id="message-input" maxlength="200"></textarea>
+              <small class="text-muted">Max 200 characters</small>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label" data-i18n="giftCertificates.deliveryMethod">Delivery Method</label>
+              <div style="display: flex; gap: 1rem;">
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <input type="radio" name="delivery" value="email" checked>
+                  <span data-i18n="giftCertificates.emailDelivery">Email Delivery</span>
+                </label>
+                <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                  <input type="radio" name="delivery" value="physical">
+                  <span data-i18n="giftCertificates.physicalCard">Physical Card</span>
+                </label>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-large" style="width: 100%;" data-i18n="giftCertificates.purchase">
+              Purchase Gift Card
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 data-i18n="footer.shop">Shop</h4>
+          <div class="footer-links">
+            <a href="shop.html" class="footer-link" data-i18n="nav.cosmetics">Cosmetics</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="nav.discover">Discover</h4>
+          <div class="footer-links">
+            <a href="booking.html" class="footer-link" data-i18n="nav.booking">Booking</a>
+            <a href="courses.html" class="footer-link" data-i18n="nav.courses">Courses</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2025 Makeup & Beauty. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/language.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/main.js"></script>
+  
+  <!-- Gift card specific script -->
+  <script>
+    // Amount selection
+    const customInput = document.getElementById('amount-input');
+    const previewAmount = document.getElementById('preview-amount');
+    const messageInput = document.getElementById('message-input');
+    const previewMessage = document.getElementById('preview-message');
+    
+    document.querySelectorAll('.amount-option').forEach(option => {
+      option.addEventListener('click', function() {
+        document.querySelectorAll('.amount-option').forEach(o => o.classList.remove('selected'));
+        this.classList.add('selected');
+        
+        const amount = this.dataset.amount;
+        if (amount === 'custom') {
+          customInput.style.display = 'block';
+          customInput.required = true;
+          customInput.focus();
+        } else {
+          customInput.style.display = 'none';
+          customInput.required = false;
+          customInput.value = amount;
+          previewAmount.textContent = amount + ' NOK';
+        }
+      });
+    });
+    
+    // Update preview on custom amount change
+    customInput.addEventListener('input', function() {
+      if (this.value) {
+        previewAmount.textContent = this.value + ' NOK';
+      }
+    });
+    
+    // Update preview message
+    messageInput.addEventListener('input', function() {
+      const lang = window.languageManager?.currentLanguage || 'en';
+      const defaultMessage = lang === 'no' ? 'En gave av skjønnhet venter deg' : 'A gift of beauty awaits you';
+      previewMessage.textContent = this.value || defaultMessage;
+    });
+  </script>
+</body>
+</html>

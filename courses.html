@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional makeup courses">
+  <title data-i18n="courses.title">Makeup Courses | Makeup & Beauty</title>
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container container">
+      <a href="index.html" class="logo">
+        <span data-i18n="hero.title">COSMETICS</span>
+        <span class="logo-subtitle" data-i18n="hero.subtitle">Makeup & Beauty</span>
+      </a>
+      
+      <button class="mobile-menu-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="shop.html" class="nav-link" data-i18n="nav.cosmetics">cosmetics</a></li>
+          <li><a href="shop.html?category=fragrance" class="nav-link" data-i18n="nav.fragrance">fragrance</a></li>
+          <li><a href="shop.html?category=skin" class="nav-link" data-i18n="nav.skin">skin</a></li>
+          <li><a href="shop.html?category=baby" class="nav-link" data-i18n="nav.baby">baby</a></li>
+          <li><a href="courses.html" class="nav-link active" data-i18n="nav.discover">discover</a></li>
+          <li><a href="booking.html" class="nav-link" data-i18n="nav.booking">booking</a></li>
+        </ul>
+        
+        <div class="language-switcher">
+          <button class="lang-btn" data-lang="no">NO</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+      
+      <div class="header-icons">
+        <button class="icon-btn search-btn" aria-label="Search">
+          <svg viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"/>
+            <path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Wishlist">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Account">
+          <svg viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+        <a href="cart.html" class="icon-btn" aria-label="Cart">
+          <svg viewBox="0 0 24 24">
+            <circle cx="9" cy="21" r="1"/>
+            <circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <main style="margin-top: var(--header-height); padding: var(--spacing-xl) 0;">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title" data-i18n="courses.title">Makeup Courses</h1>
+        <p class="section-subtitle" data-i18n="courses.subtitle">Learn from professional makeup artists</p>
+      </div>
+      
+      <!-- Course Cards -->
+      <div class="course-card">
+        <div class="course-image" style="background: linear-gradient(135deg, #f5d5e0 0%, #e8c5d5 100%);"></div>
+        <div class="course-content">
+          <span class="course-level" data-i18n="courses.beginner">BEGINNER</span>
+          <h2 class="course-title">Makeup Fundamentals</h2>
+          <p class="course-description">
+            Learn the basics of makeup application including skin prep, foundation matching, and everyday makeup looks. 
+            Perfect for those starting their makeup journey.
+          </p>
+          <div class="course-meta">
+            <span>⏱️ 4 <span data-i18n="courses.hours">hours</span></span>
+            <span>👥 Max 6 <span data-i18n="courses.students">students</span></span>
+            <span>📍 <span data-i18n="courses.level">Level</span>: <span data-i18n="courses.beginner">Beginner</span></span>
+          </div>
+          <div class="course-price">1.299 NOK</div>
+          <a href="booking.html?service=course&course=fundamentals" class="btn btn-primary" data-i18n="courses.enroll">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+      
+      <div class="course-card">
+        <div class="course-image" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);"></div>
+        <div class="course-content">
+          <span class="course-level" data-i18n="courses.intermediate">INTERMEDIATE</span>
+          <h2 class="course-title">Advanced Eye Techniques</h2>
+          <p class="course-description">
+            Master advanced eye makeup techniques including cut crease, smokey eyes, and color theory. 
+            Requires basic makeup knowledge.
+          </p>
+          <div class="course-meta">
+            <span>⏱️ 5 <span data-i18n="courses.hours">hours</span></span>
+            <span>👥 Max 4 <span data-i18n="courses.students">students</span></span>
+            <span>📍 <span data-i18n="courses.level">Level</span>: <span data-i18n="courses.intermediate">Intermediate</span></span>
+          </div>
+          <div class="course-price">1.799 NOK</div>
+          <a href="booking.html?service=course&course=eyes" class="btn btn-primary" data-i18n="courses.enroll">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+      
+      <div class="course-card">
+        <div class="course-image" style="background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);"></div>
+        <div class="course-content">
+          <span class="course-level" data-i18n="courses.advanced">ADVANCED</span>
+          <h2 class="course-title">Professional Bridal Makeup</h2>
+          <p class="course-description">
+            Learn professional bridal makeup techniques, camera-ready looks, and long-lasting application methods. 
+            For aspiring professional makeup artists.
+          </p>
+          <div class="course-meta">
+            <span>⏱️ 8 <span data-i18n="courses.hours">hours</span></span>
+            <span>👥 Max 4 <span data-i18n="courses.students">students</span></span>
+            <span>📍 <span data-i18n="courses.level">Level</span>: <span data-i18n="courses.advanced">Advanced</span></span>
+          </div>
+          <div class="course-price">2.999 NOK</div>
+          <a href="booking.html?service=course&course=bridal" class="btn btn-primary" data-i18n="courses.enroll">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+      
+      <div class="course-card">
+        <div class="course-image" style="background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%);"></div>
+        <div class="course-content">
+          <span class="course-level" data-i18n="courses.beginner">BEGINNER</span>
+          <h2 class="course-title">Skincare & Makeup Prep</h2>
+          <p class="course-description">
+            Understand skincare basics and how to prep skin for flawless makeup application. 
+            Learn about different skin types and product selection.
+          </p>
+          <div class="course-meta">
+            <span>⏱️ 3 <span data-i18n="courses.hours">hours</span></span>
+            <span>👥 Max 8 <span data-i18n="courses.students">students</span></span>
+            <span>📍 <span data-i18n="courses.level">Level</span>: <span data-i18n="courses.beginner">Beginner</span></span>
+          </div>
+          <div class="course-price">999 NOK</div>
+          <a href="booking.html?service=course&course=skincare" class="btn btn-primary" data-i18n="courses.enroll">
+            Enroll Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 data-i18n="footer.shop">Shop</h4>
+          <div class="footer-links">
+            <a href="shop.html" class="footer-link" data-i18n="nav.cosmetics">Cosmetics</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="nav.discover">Discover</h4>
+          <div class="footer-links">
+            <a href="booking.html" class="footer-link" data-i18n="nav.booking">Booking</a>
+            <a href="courses.html" class="footer-link" data-i18n="nav.courses">Courses</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4 data-i18n="footer.about">About</h4>
+          <div class="footer-links">
+            <a href="#" class="footer-link" data-i18n="footer.contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">&copy; 2025 Makeup & Beauty. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="js/language.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

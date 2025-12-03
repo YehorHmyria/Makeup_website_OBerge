@@ -11,7 +11,8 @@
       name="keywords"
       content="makeup, kosmetikk, beauty, skjønnhet, Norge, Norway"
     />
-    <title data-i18n="hero.title">Makeup & Beauty | Premium Cosmetics</title>
+    <title>OlgaBerge</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css" />
@@ -23,146 +24,54 @@
     <div class="overlay"></div>
 
     <!-- Header -->
-    <header class="header">
-      <div class="header-container container">
-        <!-- Logo -->
+  <header class="header">
+    <div class="header-container container">
+      <div class="header-top">
+        <!-- Logo (Left - Full Height) -->
         <a href="index.html" class="logo">
-          <span data-i18n="hero.title">COSMETICS</span>
-          <span class="logo-subtitle" data-i18n="hero.subtitle"
-            >Makeup & Beauty</span
-          >
+          <img src="images/logo.png" alt="Olga Berge" class="logo-image">
         </a>
-
-        <!-- Mobile Menu Button -->
-        <button class="mobile-menu-btn" aria-label="Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <!-- Navigation -->
-        <nav class="nav">
-          <ul class="nav-list">
-            <li>
-              <a href="shop.html" class="nav-link" data-i18n="nav.cosmetics"
-                >cosmetics</a
-              >
-            </li>
-            <li>
-              <a
-                href="shop.html?category=fragrance"
-                class="nav-link"
-                data-i18n="nav.fragrance"
-                >fragrance</a
-              >
-            </li>
-            <li>
-              <a
-                href="shop.html?category=skin"
-                class="nav-link"
-                data-i18n="nav.skin"
-                >skin</a
-              >
-            </li>
-            <li>
-              <a
-                href="shop.html?category=baby"
-                class="nav-link"
-                data-i18n="nav.baby"
-                >baby</a
-              >
-            </li>
-            <li>
-              <a href="courses.html" class="nav-link" data-i18n="nav.discover"
-                >discover</a
-              >
-            </li>
-            <li>
-              <a href="booking.html" class="nav-link" data-i18n="nav.booking"
-                >booking</a
-              >
-            </li>
-          </ul>
-
-          <!-- Language Switcher -->
-          <div class="language-switcher">
-            <button class="lang-btn" data-lang="no">NO</button>
-            <button class="lang-btn" data-lang="en">EN</button>
-          </div>
-        </nav>
-
-        <!-- Header Icons -->
-        <div class="header-icons">
-          <button class="icon-btn search-btn" aria-label="Search">
-            <svg viewBox="0 0 24 24">
-              <circle cx="11" cy="11" r="8" />
-              <path d="m21 21-4.35-4.35" />
-            </svg>
-          </button>
-
-          <button class="icon-btn" aria-label="Wishlist">
-            <svg viewBox="0 0 24 24">
-              <path
-                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
-              />
-            </svg>
-          </button>
-
-          <button class="icon-btn" aria-label="Account">
-            <svg viewBox="0 0 24 24">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
-          </button>
-
-          <a href="cart.html" class="icon-btn" aria-label="Cart">
-            <svg viewBox="0 0 24 24">
-              <circle cx="9" cy="21" r="1" />
-              <circle cx="20" cy="21" r="1" />
-              <path
-                d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"
-              />
-            </svg>
-            <span class="cart-count">0</span>
-          </a>
+        
+        <!-- Action Buttons (Center) -->
+        <div class="header-actions">
+          <a href="courses.html" class="header-btn" data-i18n="header.courses">courses</a>
+          <a href="booking.html" class="header-btn" data-i18n="header.booking">booking</a>
+          <a href="contact.html" class="header-btn" data-i18n="header.contact">contact</a>
+        </div>
+        
+        <!-- Language Switcher (Right) -->
+        <div class="language-switcher">
+          <button class="lang-btn" data-lang="no">NO</button>
+          <button class="lang-btn" data-lang="en">EN</button>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-decoration hero-decoration-1"></div>
-      <div class="hero-decoration hero-decoration-2"></div>
-
-      <div class="container hero-container">
-        <div class="hero-content">
-          <span class="hero-badge" data-i18n="hero.badge">JUST DROPPED</span>
-          <h1 class="hero-title" data-i18n="hero.title">COSMETICS</h1>
-          <p class="hero-description" data-i18n="hero.description">
-            Discover our exclusive collection of premium makeup and beauty
-            products. Professional quality for every occasion.
-          </p>
-          <div class="hero-cta">
-            <a
-              href="shop.html"
-              class="btn btn-primary btn-large"
-              data-i18n="hero.ctaPrimary"
-              >Shop Now</a
-            >
-            <a
-              href="#featured"
-              class="btn btn-outline btn-large"
-              data-i18n="hero.ctaSecondary"
-              >View Collection</a
-            >
-          </div>
-        </div>
-
-        <div class="hero-image-wrapper">
-          <img src="ph1.jpg" alt="Featured Product" class="hero-image" />
+  <section class="hero">
+    <div class="hero-container">
+      <!-- Image Left -->
+      <div class="hero-image-wrapper">
+        <img src="images/ph6.png" alt="Olga Berge" class="hero-image">
+      </div>
+      
+      <!-- Text Right -->
+      <div class="hero-content">
+        <span class="hero-badge" data-i18n="hero.badge">JUST DROPPED</span>
+        <h1 class="hero-title" data-i18n="hero.title">
+          COSMIC
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">OLGA BERGE</p>
+        <p class="hero-description" data-i18n="hero.description">
+          olga's signature collection. a magnetic, beauty-inspired aesthetic that transforms your world.
+        </p>
+        <div class="hero-cta">
+          <a href="shop.html" class="btn btn-primary btn-large" data-i18n="hero.ctaPrimary">shop now</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Featured Products Section -->
     <section id="featured" class="featured-section section">
@@ -345,70 +254,17 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <div class="footer-section">
-            <h4 data-i18n="footer.shop">Shop</h4>
-            <div class="footer-links">
-              <a href="shop.html" class="footer-link" data-i18n="nav.cosmetics"
-                >Cosmetics</a
-              >
-              <a
-                href="shop.html?category=fragrance"
-                class="footer-link"
-                data-i18n="nav.fragrance"
-                >Fragrance</a
-              >
-              <a
-                href="shop.html?category=skin"
-                class="footer-link"
-                data-i18n="nav.skin"
-                >Skin</a
-              >
-              <a href="shop.html" class="footer-link" data-i18n="common.viewAll"
-                >View All</a
-              >
-            </div>
-          </div>
+          
 
           <div class="footer-section">
-            <h4 data-i18n="nav.discover">Discover</h4>
-            <div class="footer-links">
-              <a href="booking.html" class="footer-link" data-i18n="nav.booking"
-                >Booking</a
-              >
-              <a href="courses.html" class="footer-link" data-i18n="nav.courses"
-                >Courses</a
-              >
-              <a
-                href="gift-certificates.html"
-                class="footer-link"
-                data-i18n="nav.giftCertificates"
-                >Gift Certificates</a
-              >
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h4 data-i18n="footer.about">About</h4>
-            <div class="footer-links">
-              <a href="#" class="footer-link" data-i18n="footer.about"
-                >About Us</a
-              >
-              <a href="#" class="footer-link" data-i18n="footer.contact"
-                >Contact</a
-              >
-              <a href="#" class="footer-link" data-i18n="footer.faq">FAQ</a>
-            </div>
-          </div>
-
-          <div class="footer-section">
-            <h4 data-i18n="footer.followUs">Follow Us</h4>
+            <h4 data-i18n="footer.followUs">Follow Me</h4>
             <div class="social-links">
               <a href="#" class="social-link" aria-label="Instagram">
                 <svg
                   viewBox="0 0 24 24"
                   width="20"
                   height="20"
-                  stroke="white"
+                  stroke="black"
                   fill="none"
                   stroke-width="2"
                 >
@@ -422,7 +278,7 @@
                   viewBox="0 0 24 24"
                   width="20"
                   height="20"
-                  stroke="white"
+                  stroke="black"
                   fill="none"
                   stroke-width="2"
                 >
@@ -436,7 +292,7 @@
                   viewBox="0 0 24 24"
                   width="20"
                   height="20"
-                  stroke="white"
+                  stroke="black"
                   fill="none"
                   stroke-width="2"
                 >
@@ -449,7 +305,7 @@
 
         <div class="footer-bottom">
           <p data-i18n="footer.copyright">
-            &copy; 2025 Makeup & Beauty. All rights reserved.
+            &copy; 2025 Olga Berge. All rights reserved.
           </p>
         </div>
       </div>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OlgaBerge</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="header-container container">
+        <div class="header-top">
+          <!-- Logo (Left - Full Height) -->
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Olga Berge" class="logo-image">
+          </a>
+          
+          <!-- Action Buttons (Center) -->
+          <div class="header-actions">
+            <a href="courses.html" class="header-btn" data-i18n="header.courses">courses</a>
+            <a href="booking.html" class="header-btn" data-i18n="header.booking">booking</a>
+            <a href="contact.html" class="header-btn" data-i18n="header.contact">contact</a>
+          </div>
+          
+          <!-- Language Switcher (Right) -->
+          <div class="language-switcher">
+            <button class="lang-btn" data-lang="no">NO</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-container">
+          <!-- Left: Contact Info -->
+          <div class="contact-info">
+            <!-- <span class="section-badge" data-i18n="contact.badge">get in touch</span> -->
+            <h1 class="contact-title" data-i18n="contact.title">contact us</h1>
+            <p class="contact-description" data-i18n="contact.description">
+              reach out for bookings, questions, or collaborations. we'd love to hear from you.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <h3 data-i18n="contact.emailLabel">email</h3>
+                  <a href="mailto:booking@olgaberge.com">booking@olgaberge.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <h3 data-i18n="contact.phoneLabel">phone</h3>
+                  <a href="tel:+4712345678">+47 469 70 154</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="12" cy="10" r="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <h3 data-i18n="contact.locationLabel">location</h3>
+                  <p>Trondheim, Norway</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-wrapper">
+            <form class="contact-form" action="https://formsubmit.co/hmyriayehor@gmail.com" method="POST">
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_subject" value="New Contact Form Submission - Olga Berge">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              
+              <div class="form-group">
+                <label for="name" data-i18n="contact.nameLabel">your name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-i18n="contact.emailInputLabel">your email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" data-i18n="contact.phoneInputLabel">phone (optional)</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                  <option value="" disabled selected data-i18n="contact.subjectPlaceholder">select subject</option>
+                  <option value="makeup booking" data-i18n="contact.subjectBooking">makeup booking</option>
+                  <option value="course inquiry" data-i18n="contact.subjectCourse">course inquiry</option>
+                  <option value="collaboration" data-i18n="contact.subjectCollaboration">collaboration</option>
+                  <option value="other" data-i18n="contact.subjectOther">other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-i18n="contact.messageLabel">your message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large" data-i18n="contact.submitButton">
+                send message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          
+
+          <div class="footer-section">
+            <h4 data-i18n="footer.followUs">Follow Me</h4>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  stroke="black"
+                  fill="none"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  stroke="black"
+                  fill="none"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="TikTok">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="20"
+                  height="20"
+                  stroke="black"
+                  fill="none"
+                  stroke-width="2"
+                >
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p data-i18n="footer.copyright">
+            &copy; 2025 Olga Berge. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+   
+
+    <!-- Scripts -->
+    <script src="js/language.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/forms.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+/* Vipps Payment Styles */
+
+.btn-vipps {
+  background: #FF5B24 !important;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-vipps:hover {
+  background: #E64F1F !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(255, 91, 36, 0.3);
+}
+
+.btn-vipps svg {
+  flex-shrink: 0;
+}
+
+/* Vipps Modal */
+.vipps-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.vipps-modal.active {
+  opacity: 1;
+}
+
+.vipps-modal-content {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xxl);
+  max-width: 600px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.vipps-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #999;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.vipps-modal-close:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.vipps-logo {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 2px solid #f5f5f5;
+}
+
+.vipps-logo h2 {
+  color: #FF5B24;
+  font-size: var(--font-size-xl);
+  margin: 0;
+}
+
+.payment-details {
+  background: #f8f8f8;
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.payment-details h3 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+  color: #333;
+  font-size: var(--font-size-md);
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.detail-row:last-child {
+  border-bottom: none;
+}
+
+.detail-row span {
+  color: #666;
+}
+
+.detail-row strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.payment-instructions {
+  margin-bottom: var(--spacing-lg);
+}
+
+.payment-instructions h3 {
+  color: #333;
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.payment-instructions ol {
+  list-style: decimal;
+  padding-left: var(--spacing-lg);
+  margin: 0;
+}
+
+.payment-instructions li {
+  padding: var(--spacing-sm) 0;
+  color: #666;
+  line-height: 1.6;
+}
+
+.payment-instructions code {
+  background: #f5f5f5;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: #FF5B24;
+  word-break: break-all;
+}
+
+.copy-section {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: #fff9f6;
+  border: 2px dashed #FF5B24;
+  border-radius: var(--radius-md);
+}
+
+.copy-section label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 600;
+  color: #333;
+  font-size: var(--font-size-sm);
+}
+
+.copy-box {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.copy-box input {
+  flex: 1;
+  padding: var(--spacing-sm);
+  border: 1px solid #ddd;
+  border-radius: var(--radius-sm);
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.btn-copy {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: #FF5B24;
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.btn-copy:hover {
+  background: #E64F1F;
+}
+
+.confirmation-note {
+  background: #e8f5e9;
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--spacing-lg);
+  border-left: 4px solid #4caf50;
+}
+
+.confirmation-note p {
+  margin: 0;
+  color: #2e7d32;
+  font-size: var(--font-size-sm);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .vipps-modal-content {
+    padding: var(--spacing-lg);
+    width: 95%;
+  }
+  
+  .payment-instructions ol {
+    padding-left: var(--spacing-md);
+  }
+  
+  .copy-box {
+    flex-direction: column;
+  }
+  
+  .btn-copy {
+    width: 100%;
+  }
+}

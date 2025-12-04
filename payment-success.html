@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful - Olga Berge</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/thank-you.css">
+</head>
+<body>
+  <div class="thank-you-container">
+    <div class="success-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 11l3 3L22 4"></path>
+        <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"></path>
+      </svg>
+    </div>
+    
+    <h1>Payment Successful!</h1>
+    <p class="success-message">
+      Thank you for your purchase. Your gift certificate will be sent to your email shortly.
+    </p>
+    
+    <div class="order-info" id="order-info">
+      <!-- Order details will be loaded here -->
+    </div>
+    
+    <a href="index.html" class="btn btn-primary">Back to Home</a>
+  </div>
+
+  <script>
+    // Get order ID from URL or session storage
+    const urlParams = new URLSearchParams(window.location.search);
+    const orderId = urlParams.get('orderId') || sessionStorage.getItem('vipps_order_id');
+    
+    if (orderId) {
+      document.getElementById('order-info').innerHTML = `
+        <p><strong>Order ID:</strong> ${orderId}</p>
+        <p>A confirmation email has been sent to your email address.</p>
+      `;
+      
+      // Clear session storage
+      sessionStorage.removeItem('vipps_order_id');
+    }
+  </script>
+</body>
+</html>

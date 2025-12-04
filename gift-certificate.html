@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OlgaBerge - Gift Certificate</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/gift-certificate.css">
+  <link rel="stylesheet" href="css/vipps-payment.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-container container">
+      <div class="header-top">
+        <!-- Logo (Left - Full Height) -->
+        <a href="index.html" class="logo">
+          <img src="images/logo.png" alt="Olga Berge" class="logo-image">
+        </a>
+        
+        <!-- Action Buttons (Center) -->
+        <div class="header-actions">
+          <a href="courses.html" class="header-btn" data-i18n="header.courses">courses</a>
+          <a href="booking.html" class="header-btn" data-i18n="header.booking">booking</a>
+          <a href="contact.html" class="header-btn" data-i18n="header.contact">contact</a>
+        </div>
+        
+        <!-- Language Switcher (Right) -->
+        <div class="language-switcher">
+          <button class="lang-btn" data-lang="no">NO</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gift Certificate Section -->
+  <section class="gift-certificate-section">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+        <h1 class="section-title" data-i18n="gift.title">Gift Certificates</h1>
+        <p class="section-description" data-i18n="gift.description">
+          Give the gift of beauty and confidence. Perfect for any occasion.
+        </p>
+      </div>
+
+      <div class="gift-options">
+        <!-- Option 1: Custom Amount -->
+        <div class="gift-card">
+          <div class="gift-card-header">
+            <h3 data-i18n="gift.custom.title">Custom Amount</h3>
+            <p class="gift-price" data-i18n="gift.custom.subtitle">from 500 NOK</p>
+          </div>
+          <div class="gift-card-body">
+            <p data-i18n="gift.custom.description">Choose your own amount for a personalized gift</p>
+            <ul class="gift-features">
+              <li data-i18n="gift.custom.feature1">✓ Flexible amount (minimum 500 NOK)</li>
+              <li data-i18n="gift.custom.feature2">✓ Valid for 12 months</li>
+              <li data-i18n="gift.custom.feature3">✓ Redeemable for any service</li>
+              <li data-i18n="gift.custom.feature4">✓ Digital or printed certificate</li>
+            </ul>
+            <form class="gift-form" action="https://formsubmit.co/hmyriayehor@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Gift Certificate Purchase - Custom Amount">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://olgaberge.up.railway.app/thank-you.html">
+              <input type="hidden" name="certificate_type" value="Custom Amount">
+              
+              <div class="form-group">
+                <label for="custom-amount" data-i18n="gift.form.amount">Amount (NOK)</label>
+                <input type="number" id="custom-amount" name="amount" min="500" step="100" placeholder="500" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="custom-name" data-i18n="gift.form.name">Your Name</label>
+                <input type="text" id="custom-name" name="buyer_name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="custom-email" data-i18n="gift.form.email">Your Email</label>
+                <input type="email" id="custom-email" name="buyer_email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="custom-recipient" data-i18n="gift.form.recipient">Recipient Name</label>
+                <input type="text" id="custom-recipient" name="recipient_name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="custom-message" data-i18n="gift.form.message">Personal Message (optional)</label>
+                <textarea id="custom-message" name="message" rows="3"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-large" data-i18n="gift.form.purchase">
+                Purchase Now
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Option 2: Evening Makeup Package -->
+        <div class="gift-card featured">
+          <div class="gift-ribbon" data-i18n="gift.popular">Most Popular</div>
+          <div class="gift-card-header">
+            <h3 data-i18n="gift.evening.title">Evening Makeup</h3>
+            <p class="gift-price">1500 NOK</p>
+          </div>
+          <div class="gift-card-body">
+            <p data-i18n="gift.evening.description">Perfect for special events and celebrations</p>
+            <ul class="gift-features">
+              <li data-i18n="gift.evening.feature1">✓ Full evening makeup application</li>
+              <li data-i18n="gift.evening.feature2">✓ Consultation (30 minutes)</li>
+              <li data-i18n="gift.evening.feature3">✓ High-quality products</li>
+              <li data-i18n="gift.evening.feature4">✓ Touch-up tips included</li>
+            </ul>
+            <form class="gift-form" action="https://formsubmit.co/hmyriayehor@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Gift Certificate Purchase - Evening Makeup">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://olgaberge.up.railway.app/thank-you.html">
+              <input type="hidden" name="certificate_type" value="Evening Makeup">
+              <input type="hidden" name="amount" value="1500">
+              
+              <div class="form-group">
+                <label for="evening-name" data-i18n="gift.form.name">Your Name</label>
+                <input type="text" id="evening-name" name="buyer_name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="evening-email" data-i18n="gift.form.email">Your Email</label>
+                <input type="email" id="evening-email" name="buyer_email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="evening-recipient" data-i18n="gift.form.recipient">Recipient Name</label>
+                <input type="text" id="evening-recipient" name="recipient_name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="evening-message" data-i18n="gift.form.message">Personal Message (optional)</label>
+                <textarea id="evening-message" name="message" rows="3"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-large" data-i18n="gift.form.purchase">
+                Purchase Now
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Option 3: Professional Course Package -->
+        <div class="gift-card">
+          <div class="gift-card-header">
+            <h3 data-i18n="gift.course.title">Makeup Course</h3>
+            <p class="gift-price">3000 NOK</p>
+          </div>
+          <div class="gift-card-body">
+            <p data-i18n="gift.course.description">Learn professional makeup techniques</p>
+            <ul class="gift-features">
+              <li data-i18n="gift.course.feature1">✓ 4-hour professional course</li>
+              <li data-i18n="gift.course.feature2">✓ One-on-one instruction</li>
+              <li data-i18n="gift.course.feature3">✓ Practice materials included</li>
+              <li data-i18n="gift.course.feature4">✓ Course certificate</li>
+            </ul>
+            <form class="gift-form" action="https://formsubmit.co/hmyriayehor@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Gift Certificate Purchase - Makeup Course">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_next" value="https://olgaberge.up.railway.app/thank-you.html">
+              <input type="hidden" name="certificate_type" value="Makeup Course">
+              <input type="hidden" name="amount" value="3000">
+              
+              <div class="form-group">
+                <label for="course-name" data-i18n="gift.form.name">Your Name</label>
+                <input type="text" id="course-name" name="buyer_name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="course-email" data-i18n="gift.form.email">Your Email</label>
+                <input type="email" id="course-email" name="buyer_email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="course-recipient" data-i18n="gift.form.recipient">Recipient Name</label>
+                <input type="text" id="course-recipient" name="recipient_name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="course-message" data-i18n="gift.form.message">Personal Message (optional)</label>
+                <textarea id="course-message" name="message" rows="3"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-large" data-i18n="gift.form.purchase">
+                Purchase Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4 data-i18n="footer.followUs">Follow Me</h4>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="black" fill="none" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="black" fill="none" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg viewBox="0 0 24 24" width="20" height="20" stroke="black" fill="none" stroke-width="2">
+                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Olga Berge. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/language.js?v=3"></script>
+  <script src="js/vipps-payment.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

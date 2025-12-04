@@ -1,0 +1,184 @@
+/* Portfolio Carousel Styles */
+.portfolio-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--color-background-alt);
+}
+
+.portfolio-carousel {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-container {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  gap: var(--spacing-lg);
+}
+
+.carousel-slide {
+  min-width: calc(33.333% - (var(--spacing-lg) * 2 / 3));
+  flex-shrink: 0;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  height: 100%;
+}
+
+.portfolio-image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+  transform: scale(1.05);
+}
+
+.portfolio-info {
+  padding: var(--spacing-md);
+  text-align: center;
+}
+
+.portfolio-info h3 {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  color: #9B6B6B;
+  text-transform: lowercase;
+}
+
+.portfolio-info p {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  text-transform: lowercase;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Carousel Navigation Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all var(--transition-fast);
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: #9B6B6B;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn:hover svg {
+  stroke: white;
+}
+
+.carousel-btn.prev {
+  left: -20px;
+}
+
+.carousel-btn.next {
+  right: -20px;
+}
+
+.carousel-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: #9B6B6B;
+  transition: stroke var(--transition-fast);
+}
+
+/* Carousel Dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: var(--spacing-lg);
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d4c4b8;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.carousel-dot.active {
+  background: #9B6B6B;
+  width: 24px;
+  border-radius: 4px;
+}
+
+.carousel-dot:hover {
+  background: #9B6B6B;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .carousel-slide {
+    min-width: calc(50% - (var(--spacing-lg) / 2));
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    min-width: 100%;
+  }
+  
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .carousel-btn.prev {
+    left: 10px;
+  }
+  
+  .carousel-btn.next {
+    right: 10px;
+  }
+  
+  .carousel-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .portfolio-info {
+    padding: var(--spacing-sm);
+  }
+  
+  .portfolio-info h3 {
+    font-size: var(--font-size-sm);
+  }
+}

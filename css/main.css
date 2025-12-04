@@ -279,14 +279,15 @@ p {
 }
 
 .btn-primary {
-  background: var(--color-primary);
-  color: white;
+  background: rgb(48, 37, 33);
+  color: #ffede5;
+  text-transform: lowercase;
 }
 
 .btn-primary:hover {
-  background: var(--color-text-primary);
+  background: rgb(60, 47, 43);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-secondary {

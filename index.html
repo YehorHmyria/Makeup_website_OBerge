@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/components.css" />
     <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
   </head>
   <body>
     <!-- Overlay for mobile menu -->
@@ -56,199 +58,204 @@
         <img src="images/ph6.png" alt="Olga Berge" class="hero-image">
       </div>
       
-      <!-- Text Right -->
+      <!-- Hero Content (Right) -->
       <div class="hero-content">
-        <span class="hero-badge" data-i18n="hero.badge">JUST DROPPED</span>
-        <h1 class="hero-title" data-i18n="hero.title">
-          COSMIC
-        </h1>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">OLGA BERGE</p>
+        <h1 class="hero-title" data-i18n="hero.title">OLGA BERGE</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">beauty & makeup</p>
         <p class="hero-description" data-i18n="hero.description">
-          olga's signature collection. a magnetic, beauty-inspired aesthetic that transforms your world.
+          professional makeup artist specializing in event makeup, evening looks, and personalized beauty consultations. let's create your perfect look together.
         </p>
         <div class="hero-cta">
-          <a href="shop.html" class="btn btn-primary btn-large" data-i18n="hero.ctaPrimary">shop now</a>
+          <a href="courses.html" class="btn btn-primary" data-i18n="hero.cta">
+            learn more
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- Featured Products Section -->
-    <section id="featured" class="featured-section section">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title" data-i18n="sections.featured">
-            Featured Products
-          </h2>
-          <p class="section-subtitle" data-i18n="sections.featuredDesc">
-            Our most popular products selected for you
-          </p>
-        </div>
-
-        <div class="products-grid">
-          <!-- Product Card 1 -->
-          <div class="product-card" data-product-id="1" data-price="299">
-            <div
-              class="product-image"
-              style="
-                background: linear-gradient(135deg, #f5d5e0 0%, #e8c5d5 100%);
-                height: 280px;
-              "
-            ></div>
-            <div class="product-info">
-              <span class="product-badge" data-i18n="product.new">NEW</span>
-              <h3 class="product-title">Luxury Lipstick</h3>
-              <p class="product-description">
-                Long-lasting formula with vibrant colors
-              </p>
-              <div class="product-price">299 NOK</div>
-              <button
-                class="btn btn-primary add-to-cart-btn"
-                data-i18n="product.addToCart"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product Card 2 -->
-          <div class="product-card" data-product-id="2" data-price="449">
-            <div
-              class="product-image"
-              style="
-                background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-                height: 280px;
-              "
-            ></div>
-            <div class="product-info">
-              <h3 class="product-title">Foundation</h3>
-              <p class="product-description">
-                Flawless coverage for all skin types
-              </p>
-              <div class="product-price">449 NOK</div>
-              <button
-                class="btn btn-primary add-to-cart-btn"
-                data-i18n="product.addToCart"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product Card 3 -->
-          <div class="product-card" data-product-id="3" data-price="349">
-            <div
-              class="product-image"
-              style="
-                background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
-                height: 280px;
-              "
-            ></div>
-            <div class="product-info">
-              <span class="product-badge" data-i18n="product.new">NEW</span>
-              <h3 class="product-title">Eye Shadow Palette</h3>
-              <p class="product-description">
-                12 stunning shades for every look
-              </p>
-              <div class="product-price">349 NOK</div>
-              <button
-                class="btn btn-primary add-to-cart-btn"
-                data-i18n="product.addToCart"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-
-          <!-- Product Card 4 -->
-          <div class="product-card" data-product-id="4" data-price="199">
-            <div
-              class="product-image"
-              style="
-                background: linear-gradient(135deg, #ffecd2 0%, #f8d7da 100%);
-                height: 280px;
-              "
-            ></div>
-            <div class="product-info">
-              <h3 class="product-title">Mascara</h3>
-              <p class="product-description">
-                Volumizing and lengthening formula
-              </p>
-              <div class="product-price">199 NOK</div>
-              <button
-                class="btn btn-primary add-to-cart-btn"
-                data-i18n="product.addToCart"
-              >
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem">
-          <a
-            href="shop.html"
-            class="btn btn-outline btn-large"
-            data-i18n="common.viewAll"
-            >View All Products</a
-          >
-        </div>
+  <!-- Portfolio Section -->
+  <section class="portfolio-section section">
+    <div class="container">
+      <div class="section-header" style="text-align: center; margin-bottom: var(--spacing-xl);">
+        <h2 class="section-title" data-i18n="portfolio.title">My Work</h2>
+        <p class="section-description" data-i18n="portfolio.description">
+          Transforming beauty into art, one face at a time. Explore some of my recent work and the beautiful moments I've been part of.
+        </p>
       </div>
-    </section>
+
+      <div class="portfolio-carousel">
+        <div class="carousel-container">
+          <div class="carousel-track">
+            <!-- Slide 1 -->
+            <div class="carousel-slide">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="https://placehold.co/600x800/9B6B6B/FFF?text=Evening+Makeup" alt="Evening Makeup">
+                </div>
+                <div class="portfolio-info">
+                  <h3 data-i18n="portfolio.slide1.title">Evening Makeup</h3>
+                  <p data-i18n="portfolio.slide1.description">elegant evening look for a special celebration</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="https://placehold.co/600x800/9B6B6B/FFF?text=Bridal+Makeup" alt="Bridal Makeup">
+                </div>
+                <div class="portfolio-info">
+                  <h3 data-i18n="portfolio.slide2.title">Bridal Makeup</h3>
+                  <p data-i18n="portfolio.slide2.description">natural and radiant bridal beauty</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="https://placehold.co/600x800/9B6B6B/FFF?text=Fashion+Makeup" alt="Fashion Makeup">
+                </div>
+                <div class="portfolio-info">
+                  <h3 data-i18n="portfolio.slide3.title">Fashion Makeup</h3>
+                  <p data-i18n="portfolio.slide3.description">bold and creative fashion editorial</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-slide">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="https://placehold.co/600x800/9B6B6B/FFF?text=Natural+Look" alt="Natural Look">
+                </div>
+                <div class="portfolio-info">
+                  <h3 data-i18n="portfolio.slide4.title">Natural Look</h3>
+                  <p data-i18n="portfolio.slide4.description">fresh and effortless everyday beauty</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-slide">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="https://placehold.co/600x800/9B6B6B/FFF?text=Glamour+Makeup" alt="Glamour Makeup">
+                </div>
+                <div class="portfolio-info">
+                  <h3 data-i18n="portfolio.slide5.title">Glamour Makeup</h3>
+                  <p data-i18n="portfolio.slide5.description">dramatic and sophisticated glamour</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-slide">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="https://placehold.co/600x800/9B6B6B/FFF?text=Editorial+Makeup" alt="Editorial Makeup">
+                </div>
+                <div class="portfolio-info">
+                  <h3 data-i18n="portfolio.slide6.title">Editorial Makeup</h3>
+                  <p data-i18n="portfolio.slide6.description">artistic and magazine-worthy looks</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 7 -->
+            <div class="carousel-slide">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="https://placehold.co/600x800/9B6B6B/FFF?text=Special+Event" alt="Special Event">
+                </div>
+                <div class="portfolio-info">
+                  <h3 data-i18n="portfolio.slide7.title">Special Event</h3>
+                  <p data-i18n="portfolio.slide7.description">perfect for your memorable occasions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="carousel-btn prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="carousel-btn next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+
+        <!-- Dots Navigation -->
+        <div class="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
 
     <!-- Services Section -->
-    <section class="section-sm" style="background: var(--color-background-alt)">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Our Services</h2>
-          <p class="section-subtitle">
-            Professional makeup services and courses
+  <section class="services-section section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title" data-i18n="services.title">My Services</h2>
+        <p class="section-description" data-i18n="services.description">
+          Professional makeup services and courses
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Makeup Application -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v12M6 12h12"/>
+            </svg>
+          </div>
+          <h3 class="service-title" data-i18n="services.makeup.title">Makeup Application</h3>
+          <p class="service-description" data-i18n="services.makeup.description">
+            Professional makeup for any occasion
           </p>
+          <a href="booking.html" class="service-btn" data-i18n="services.makeup.cta">booking</a>
         </div>
 
-        <div class="grid grid-3">
-          <div class="service-option">
-            <h3 class="service-name" data-i18n="booking.services.makeup">
-              Makeup Application
-            </h3>
-            <p>Professional makeup for any occasion</p>
-            <a
-              href="booking.html"
-              class="btn btn-secondary"
-              style="margin-top: 1rem"
-              data-i18n="nav.booking"
-              >Book Now</a
-            >
+        <!-- Service 2: Courses -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+            </svg>
           </div>
+          <h3 class="service-title" data-i18n="services.courses.title">courses</h3>
+          <p class="service-description" data-i18n="services.courses.description">
+            Learn from professional makeup artists
+          </p>
+          <a href="courses.html" class="service-btn" data-i18n="services.courses.cta">learn more</a>
+        </div>
 
-          <div class="service-option">
-            <h3 class="service-name" data-i18n="nav.courses">Makeup Courses</h3>
-            <p>Learn from professional makeup artists</p>
-            <a
-              href="courses.html"
-              class="btn btn-secondary"
-              style="margin-top: 1rem"
-              data-i18n="common.learnMore"
-              >Learn More</a
-            >
+        <!-- Service 3: Gift Certificates -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 12v10H4V12M2 7h20v5H2z"/>
+              <path d="M12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7z"/>
+              <path d="M12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/>
+            </svg>
           </div>
-
-          <div class="service-option">
-            <h3 class="service-name" data-i18n="nav.giftCertificates">
-              Gift Certificates
-            </h3>
-            <p>Give the gift of beauty and luxury</p>
-            <a
-              href="gift-certificates.html"
-              class="btn btn-secondary"
-              style="margin-top: 1rem"
-              data-i18n="common.learnMore"
-              >Learn More</a
-            >
-          </div>
+          <h3 class="service-title" data-i18n="services.gift.title">Gift Certificates</h3>
+          <p class="service-description" data-i18n="services.gift.description">
+            Give the gift of beauty and luxury
+          </p>
+          <a href="gift-certificate.html" class="service-btn" data-i18n="services.gift.cta">learn more</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -312,8 +319,9 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="js/language.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  <script src="js/language.js?v=3"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
